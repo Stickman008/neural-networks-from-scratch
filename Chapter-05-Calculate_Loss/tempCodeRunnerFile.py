@@ -1,0 +1,1 @@
+class_targets = [0, 1, 1] # dog, cat, cat
