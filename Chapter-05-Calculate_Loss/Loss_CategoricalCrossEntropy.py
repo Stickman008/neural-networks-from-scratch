@@ -38,8 +38,8 @@ class Loss_CategoricalCrossentropy(Loss):
         # Mask values - only for one-hot encoded labels
         elif len(y_true.shape) == 2:
             correct_confidences = np.sum(
-            y_pred_clipped * y_true,
-            axis=1
+                y_pred_clipped * y_true,
+                axis=1
             )
         
         # Losses

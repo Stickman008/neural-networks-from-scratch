@@ -1,5 +1,7 @@
 import numpy as np
 
+''' Respect to inputs '''
+
 # Passed in gradient from the next layer
 # for the purpose of this example we're going to use
 # a vector of 1s
@@ -39,5 +41,6 @@ dvalues = np.array([
     [2., 2., 2.],
     [3., 3., 3.]]
                    )
-dinputs = np.dot(dvalues, weights.T)
-print(dinputs)
+print(dvalues.shape, weights.T.shape)
+dinputs = np.dot(dvalues, weights.T) 
+print(dinputs) # (sample, features)
